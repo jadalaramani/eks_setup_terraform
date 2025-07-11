@@ -89,9 +89,6 @@ pipeline {
         failure {
             echo 'Terraform deployment failed. Check the logs for details.'
         }
-        always {
-            // Clean up workspace
-            cleanWs()
-        }
+
     }
 }
